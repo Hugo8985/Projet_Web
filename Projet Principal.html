@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet WEB</title>
+    <link rel="shortcut icon" href="logo2.png">
+    <link rel="stylesheet" href="style-principal.css">     
+</head>
+
+<body>
+    <header class="bandeau">
+        <div class="cases">
+          <div class="case" data-link="Projet Principal.html">Accueil</div>
+         <div class="case" data-link="Présentation.html">Présentation</div>
+         <div class="case" data-link="Formation.html">Expérience Professionnel | Formation</div>
+      </div>
+    </header>
+
+    <script>
+
+    const cases = document.querySelectorAll('.case');
+
+    cases.forEach(c => {
+        c.addEventListener('click', () => {
+            const lien = c.getAttribute('data-link');
+            if(lien && lien !== '#') {
+                window.location.href = lien;
+            }
+        });
+    });
+    cases.forEach(c => {
+    if(c.getAttribute('data-link') === window.location.pathname.split("/").pop()) {
+        c.classList.add('active');
+    }
+});
+    </script>
+    <div class="top">
+        <div class="Principal">
+            <h1>Le Milouf en pièce détaché</h1>
+        </div>
+
+        <div class="Secondaire">
+            <p>Etudiant à L'ENSIBS | Réserviste</p>
+        </div>
+    </div> 
+    <section class="section-colonne">
+        <div class="colonneG">
+            <div class="cercleG"></div>
+        </div>
+        <div class="colonneD">
+            <h2>A propos : </h2>
+            <p> &emsp;&emsp;Actuellement plongé dans les joies des études supérieures à Lorient, j’ai une petite particularité : comme vous l’avez peut-être déjà deviné à mon accent — certes très discret — et à mon fort caractère, je viens du Sud-Ouest. Plus précisément de Brive-la-Gaillarde, en Corrèze.
+            Cette ville est entre autres connue pour son club de rugby, qui pour l’instant ne brille pas par ses exploits… mais en tant que fervent supporter du CAB, je garde espoir !
+            </p>
+        </div>
+    </section>
+        <div class="tertiaire">
+            <div class="Suivez-moi">
+                <h3>CONTACT :</h3>
+                <br>
+                <div class="items">
+
+                <a class="item" href="https://www.instagram.com/hugo.mr19/" target="_blank">
+                     <img id="monImage" class="photo" src="logo insta.png"></a>
+                <p>: hugo.mr19</p>
+                <script>
+                const img = document.getElementById("monImage");
+                img.addEventListener("mouseover", function() {
+                img.src = "INSTA.jpg";
+                });
+                img.addEventListener("mouseout", function() {
+                 img.src = "logo insta.png";
+                });
+                </script>
+                </div>
+                </div>
+                <div class="items">
+                    <img class="photo" src="Tel.jpg">
+                    <p>: 06 71 27 25 02</p>
+                </div>
+                <div class="items">
+                    <img class="photo" src="Mail.jpg">
+                    <p>: h.marin240210@gmail.com</p>
+                </div>
+                <div class="Réserve">
+                    <a href="https://www.youtube.com/watch?v=SH9KyxF6wsE" target="_blank">
+                    <img  id="Réserve" class="img" src="ob_28940a_logo-reserve-militaire.webp">
+                </a>
+                <script>
+                const img2 = document.getElementById("Réserve");
+                img2.addEventListener("mouseover", function() {
+                img2.src = "Flag_of_France.svg.png";
+                });
+                img2.addEventListener("mouseout", function() {
+                 img2.src = "ob_28940a_logo-reserve-militaire.webp";
+                });
+                </script>
+                </div>
+                <div class="mentions">
+                 <P>© 2026 – Site personnel | Mentions légales</P>
+                </div>
+            </div>
+
+        </div>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formation</title>
+    <link rel="shortcut icon" href="logo2.png">
+    <link rel="stylesheet" href="style-principal.css">     
+</head>
+<body>
+    <header class="bandeau">
+        <div class="cases">
+            <div class="case" data-link="Projet Principal.html">Accueil</div>
+            <div class="case" data-link="Présentation.html">Présentation</div>
+            <div class="case" data-link="Formation.html">Expérience Professionnel | Formation</div>
+        </div>
+    </header>
+    <script>
+    const cases = document.querySelectorAll('.case');
+
+    cases.forEach(c => {
+        c.addEventListener('click', () => {
+            const lien = c.getAttribute('data-link');
+            if(lien && lien !== '#') {
+                window.location.href = lien;
+            }
+        });
+    });
+    </script>
+    <div class="top1">
+        <div class="Titre">
+        <h1>Expérience | Formation</h1>
+        </div>
+        </div>
+        <div class="Colonne">
+            <div class="G">
+                <h2>Expérience : </h2>
+                <p> Juillet 2025 : Mission d’intérim en manutention et démontage d’installations événementielles à Brive-la-Gaillarde.
+                    <br>
+                    <br>
+                    Depuis 2024 : Réserviste opérationnel au 126ᵉ Régiment d’Infanterie à Brive-la-Gaillarde.
+                    <br>
+                    <br>
+                    Juillet 2024 : Formation initiale de la réserve opérationnelle (2 semaines) au 126ᵉ Régiment d’Infanterie.
+                    <br>
+                    <br>
+                    Juin 2023 : Stage d’observation de 2 semaines chez Artefact à Brive-la-Gaillarde.
+                    <br>
+                    <br>
+                    Novembre 2021 : Stage d’observation d’une semaine chez Gaillard Académie à Brive-la-Gaillarde.</p>
+            </div>
+            <div class="D">
+                <h2>Formation</h2>
+                <p> 2025–2026 : Première année d’études supérieures en prépa intégrée à l’ENSIBS.
+                    <br>
+                    <br>
+                    2025 : Baccalauréat avec mentions, spécialités Mathématiques et Chimie, Lycée Bossuet à Brive-la-Gaillarde.
+                    <br>
+                    <br>
+                    2025: Brevet de Secourisme niveau 1 et Secours au Combat niveau 1, 126ᵉ Régiment d’Infanterie, Brive-la-Gaillarde.
+                    <br>
+                    <br>
+                    2022: Brevet des collèges mention Très Bien, Collège Bossuet à Brive-la-Gaillarde.
+                </p>
+            </div>
+        </div>
+        <div class="bandeauI">
+            <div class=" c Gaillard">
+                <h2>Gaillard-Academie</h2>
+            </div>
+            <div class="c Bossuet">
+                <h2>Ensemble Scolaire Edmont Michelet</h2>
+            </div>
+            <div class="c Ri">
+                <h2>126e Ri</h2>
+            </div>
+            <div class="c Ensibs">
+                <h2>ENSIBS</h2>
+            </div>
+        </div>
+        <div class="tertiaire">
+            <div class="Suivez-moi">
+                <h3>CONTACT :</h3>
+                <br>
+                <div class="items">
+
+                <a class="item" href="https://www.instagram.com/hugo.mr19/" target="_blank">
+                     <img id="monImage" class="photo" src="logo insta.png"></a>
+                <p>: hugo.mr19</p>
+                <script>
+                const img = document.getElementById("monImage");
+                img.addEventListener("mouseover", function() {
+                img.src = "INSTA.jpg";
+                });
+                img.addEventListener("mouseout", function() {
+                 img.src = "logo insta.png";
+                });
+                </script>
+                </div>
+                </div>
+                <div class="items">
+                    <img class="photo" src="Tel.jpg">
+                    <p>: 06 71 27 25 02</p>
+                </div>
+                <div class="items">
+                    <img class="photo" src="Mail.jpg">
+                    <p>: h.marin240210@gmail.com</p>
+                </div>
+                <div class="Réserve">
+                    <a href="https://www.youtube.com/watch?v=SH9KyxF6wsE" target="_blank">
+                    <img  id="Réserve" class="img" src="ob_28940a_logo-reserve-militaire.webp">
+                </a>
+                <script>
+                const img2 = document.getElementById("Réserve");
+                img2.addEventListener("mouseover", function() {
+                img2.src = "Flag_of_France.svg.png";
+                });
+                img2.addEventListener("mouseout", function() {
+                 img2.src = "ob_28940a_logo-reserve-militaire.webp";
+                });
+                </script>
+                </div>
+                <div class="mentions">
+                 <P>© 2026 – Site personnel | Mentions légales</P>
+                </div>
+            </div>
+
+        </div>
+</body>
+</html>

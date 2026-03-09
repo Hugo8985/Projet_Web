@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet WEB</title>
+    <link rel="shortcut icon" href="file:///D:/0-Windows/Bureau/2025-26/Projet%20WEB/logo.png">
+    <link rel="stylesheet" href="Projet%20WEB_files/style-principal.css">     
+</head>
+
+<body>
+    <header class="bandeau">
+        <div class="cases">
+            <div class="case" data-link="https://www.reservistes.defense.gouv.fr/">Accueil</div>
+            <div class="case">Présentation</div>
+            <div class="case">Contact</div>
+            <div class="case">Expérience Professionnel</div>
+            <div class="case">Formation</div>
+            <div class="case">Centre d'Interet</div>
+        </div>
+    </header>
+
+    <script>
+
+    const cases = document.querySelectorAll('.case');
+
+    cases.forEach(c => {
+        c.addEventListener('click', () => {
+            const lien = c.getAttribute('data-link');
+            if(lien && lien !== '#') {
+                window.location.href = lien;
+            }
+        });
+    });
+    </script>
+    <div class="top">
+
+        <div class="Principal">
+            <h1>Le Milouf en pièce détaché</h1>
+        </div>
+
+        <div class="Secondaire">
+            <p>Etudiant à L'ENSIBS | Réserviste</p>
+        </div>
+    </div> 
+    <section class="section-colonne">
+        <div class="colonneG">
+            <div class="cercleG"></div>
+        </div>
+        <div class="colonneD">
+            <h2>A propos</h2>
+            <p>Texte ou description ici...</p>
+        </div>
+    </section>
+        <div class="tertiaire">
+            <div class="Suivez-moi">
+                <h3>Suivez moi :</h3>
+                    <img class="photo" src="Projet%20WEB_files/Instagram_logo_2022.svg.webp">
+            </div>
+        </div>
+
+
+</body></html>
